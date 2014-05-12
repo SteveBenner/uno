@@ -1,0 +1,26 @@
+/ todo: use middleman to do this!
+/ todo: add 'behance' =>'http://www.behance.net/SensibleSolutions' when ready
+- social = { \
+    'github' =>'http://github.com/SteveBenner', \
+    'stack-overflow' => 'http://stackoverflow.com/users/1575456/steve-benner', \
+    'linkedin' =>'http://www.linkedin.com/pub/stephen-benner/43/b24/544', \
+    'facebook' =>'https://www.facebook.com/stephen.benner', \
+    'twitter' =>'http://twitter.com/SteveBenner09', \
+    'google-plus' => 'http://plus.google.com/u/0/101915217965358144640', \
+    'mail' =>'business1047@gmail.com' \
+  }
+
+- require('bundler')
+- Bundler.setup(:development)
+- require('active_support/core_ext/string')
+
+- social.each do |name, link|
+  li.navigation__item
+    - title = case name \
+                when 'twitter' then "#{name.capitalize.prepend('@')} on Twitter" \
+                when 'mail' then "Email #{name.capitalize}" \
+                else name.titleize \
+              end
+    a href=link title=title
+      i.icon class="icon-#{(name == 'mail') ? 'mail' : 'social-' + name}"
+      span.label = name.titleize

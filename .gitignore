@@ -1,11 +1,28 @@
-# vim ~tmp files
-*.swp
-*.un~
+# Apple seriously, comon
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+Thumbs.db
 
-# ignore bourbon install so that it is the latest build
-# for developers that need it
-assets/scss/bourbon/*
+# Vim, you are no longer cool
+*~
 
-# ignore the sass-cache/
-.sass-cache/*
-**/.sass-cache/*
+# JetBrains IDE configuration files
+.idea/
+
+# SASS/SCSS
+.sass-cache/
+
+# Bundler
+.gems/
+.vendor/bundle
+.bundle/
+
+# Bower
+bower_components/
+components/
+

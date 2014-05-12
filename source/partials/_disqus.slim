@@ -1,0 +1,25 @@
+/ Original snippet: https://gist.github.com/voigt/6676772
+
+/ Usage (Ghost):
+  - Compile the Slim template with the following command:
+    `slimrb <PathToThisPartial> > <YourGhostDir>/content/themes/<YourCurrentTheme>/partials/disqus.hbs`
+  - Insert {{> disqus}} into your 'post' handlebars file, between {{/post}} and </article>.
+  - Your 'post' file should be located at <YourGhostDir>/content/themes/<YourCurrentTheme>/post.hbs
+
+#disqus_thread
+  / Make sure you have the 'coffee-script' gem installed (or similar) if you use embedded coffeescript!
+  coffee:
+    disqus_shortname = 'computethisblog' # [REQUIRED] disqus forum shortname
+    disqus_identifier = '{{id}}'          # set to {{post.id}} when inserting this snippet outside of {{post}}
+
+    # Embed disqus thread
+    dsq = document.createElement('script')
+    dsq.type = 'text/javascript'
+    dsq.async = true
+    dsq.src = "//#{disqus_shortname}.disqus.com/embed.js"
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+
+  noscript
+    ' Please enable JavaScript to view the
+    | <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  a.dsq-brlink href="http://disqus.com" comments powered by <span class="logo-disqus">Disqus</span>
