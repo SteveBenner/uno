@@ -1,13 +1,8 @@
-
-
----
 # Uno for Ghost
-
-Uno for Ghost is the result of my first 'mini-project' of 2014. The theme features a minimal, responsive design with a cover page, disqus comment integration, foundation icons and various colour options.
-
+This is a fork of Uno by Dale Anthony; the original can be found [here](https://github.com/daleanthony/uno). It is modified for use by a Rubyist, and highly customized.
 
 ## Demo
-There's a demo of the theme running on my personal website, [daleanthony.com](http://daleanthony.com)
+View this theme in action as it powers my personal blog [ComputeThis](http://blog.sensiblesolutions.me)
 
 ## Features
 
@@ -41,7 +36,7 @@ Some common questions are answered on the [Uno FAQ page](http://daleanthony.com/
 
 ## Contact
 
-The best way to contact me is by [dropping me an email](dale@daleanthony.com) or my messaging me on [Twitter](https://twitter.com/daleanthony)
+The best way to contact me is by [dropping me an email](sbenner9@gmail.com) or my messaging me on [Twitter](https://twitter.com/SteveBenner09)
 
 ## Licence
 
@@ -97,4 +92,12 @@ This is a known issue with the [Sass on MaxOS Maverick](http://stackoverflow.com
 
 ```bash
 gem install rb-fsevent
+```
+
+## Deployment
+To use this theme on Ghost's official hosting platform, or otherwise deploy, you'll need to run the following commands from the project root:
+
+```bash
+bourbon install --path assets/scss
+slimrb source/partials/social.slim partials/social.hbs
 ```

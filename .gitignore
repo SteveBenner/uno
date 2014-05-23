@@ -26,3 +26,8 @@ Thumbs.db
 bower_components/
 components/
 
+# Bourbon
+assets/scss/bourbon
+
+# Compiled from templates
+partials/social.*
