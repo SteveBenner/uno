@@ -19,15 +19,16 @@ Thumbs.db
 
 # Bundler
 .gems/
-.vendor/bundle
 .bundle/
 
 # Bower
 bower_components/
+bower-components/
 components/
 
 # Bourbon
 assets/scss/bourbon
 
-# Compiled from templates
-partials/social.*
+# Generated files
+social.hbs
+disqus*.hbs

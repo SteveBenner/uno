@@ -1,46 +1,21 @@
-# Uno for Ghost
-This is a fork of Uno by Dale Anthony; the original can be found [here](https://github.com/daleanthony/uno). It is modified for use by a Rubyist, and highly customized.
+# Uno - A theme for [Ghost]
+### Attribution Notice
+This is a derivative work, forked from [the original Uno theme] by [Dale Anthony] and licensed under [Creative Commons Attribution 4.0 International]. It has been heavily modified for use by a Rubyist.
+
+I would like to personally thank Dale for the use of his excellent material!
 
 ## Demo
-View this theme in action as it powers my personal blog [ComputeThis](http://blog.sensiblesolutions.me)
+View this theme in action on my technical blog [ComputeThis](http://blog.sensiblesolutions.me)
 
 ## Features
 
-**Cover page**
-The landing page for Uno is a full screen 'cover' featuring your avatar, blog title, mini-bio and cover image.
-
-**Built with SASS, using BEM**
-If you know HTML and CSS making modifications to the theme should be super simple.
-
-**Responsive**
-Uno looks great on all devices, even those weird phablets that nobody buys.
-
-**Disqus comments**
-Disqus integration allows users to comment on your posts.
-
-**Foundation icons**
-Uno contains the [Foundation icon font by Zurb](http://zurb.com/playground/foundation-icon-fonts-3) which means you can easily add icons. A full list of available icons can be found on the [Foundation Icon](http://zurb.com/playground/foundation-icon-fonts-3) website.
-
-**No-JS fallback**
-While JS is widely used, some themes and websites don't provide fallback for when no JS is available (I'm looking at you [Squarespace](http://blog.squarespace.com/)). If for some weird reason a visitor has JS disabled your blog will still be useable.
-
-**1 theme, 5 colour options**
-Uno includes 5 different colour options for you to chose from.
-
-**Future**
-Ghost is still a work in progress with many features not yet implemented, as Ghost gets updated new features will be added to Uno.
-
-## FAQs
-
-Some common questions are answered on the [Uno FAQ page](http://daleanthony.com/uno-faq/)
-
-## Contact
-
-The best way to contact me is by [dropping me an email](sbenner9@gmail.com) or my messaging me on [Twitter](https://twitter.com/SteveBenner09)
-
-## Licence
-
-[Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)
+- **Cover page** - The landing page for Uno is a full screen 'cover' featuring your avatar, blog title, mini-bio and cover image.
+- **Responsive** - Uno looks great on all devices, even those weird phablets that nobody buys.
+- **5 color options** - Uno includes 5 different color options for you to chose from.
+- **Disqus integration** - The easiest way to let people comment on your blog.
+- **Foundation icons** - Uno contains the quality [Foundation icon font by Zurb].
+- **No-JS fallback** - While JS is widely used, some themes and websites don't provide fallback for when no JS is available (I'm looking at you [Squarespace](http://blog.squarespace.com/)). If for some weird reason a visitor has JS disabled your blog will still be useable.
+- **Built with SASS, using BEM**
 
 ## Development
 
@@ -101,3 +76,11 @@ To use this theme on Ghost's official hosting platform, or otherwise deploy, you
 bourbon install --path assets/scss
 slimrb source/partials/social.slim partials/social.hbs
 ```
+
+
+[Ghost]: https://ghost.org/
+[the original Uno theme]: https://github.com/daleanthony/uno
+[Dale Anthony]: dale@daleanthony.com
+[Creative Commons Attribution 4.0 International]: http://creativecommons.org/licenses/by/4.0/
+[Foundation icon font by Zurb]: http://zurb.com/playground/foundation-icon-fonts-3
+[Foundation icon website]: http://zurb.com/playground/foundation-icon-fonts-3
